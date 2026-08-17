@@ -1,0 +1,206 @@
+name: notebooks
+
+# Re-executes every chapter's lab notebook headlessly on every push and PR.
+# Each notebook's final cell is a _selftest() that asserts every numerical
+# claim the corresponding book chapter makes -- so this workflow fails if a
+# library update silently breaks a fact in the printed text, not just a plot.
+#
+# Add a new job block here each time a chXX/ folder gets a lab notebook.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ch01:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch01/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch01/lab01.ipynb > /dev/null
+
+  ch02:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch02/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch02/lab02.ipynb > /dev/null
+
+  ch03:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch03/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch03/lab03.ipynb > /dev/null
+
+  ch04:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch04/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch04/lab04.ipynb > /dev/null
+
+  ch05:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch05/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch05/lab05.ipynb > /dev/null
+
+  ch06:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch06/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch06/lab06.ipynb > /dev/null
+
+  ch07:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch07/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch07/lab07.ipynb > /dev/null
+
+  ch08:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch08/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch08/lab08.ipynb > /dev/null
+
+  ch09:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch09/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch09/lab09.ipynb > /dev/null
+
+  ch10:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch10/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch10/lab10.ipynb > /dev/null
+
+  ch11:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch11/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch11/lab11.ipynb > /dev/null
+
+  ch12:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch12/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch12/lab12.ipynb > /dev/null
+
+  ch13:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch13/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch13/lab13.ipynb > /dev/null
+
+  ch14:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch14/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch14/lab14.ipynb > /dev/null
+
+  ch15:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch15/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=300 \
+            --stdout ch15/lab15.ipynb > /dev/null
+
+  ch16:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r ch16/requirements.txt
+      - run: |
+          python -m jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=600 \
+            --stdout ch16/lab16.ipynb > /dev/null
