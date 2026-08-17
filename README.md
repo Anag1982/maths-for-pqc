@@ -1,8 +1,7 @@
 # Maths for Post-Quantum Cryptography — companion labs
 
 Companion Jupyter notebooks for *Maths for Post-Quantum Cryptography*
-(Mathematics for Everything, Book 4), by Avishek Nag, School of Electrical &
-Electronic Engineering, University College Dublin.
+(Mathematics for Everything, Book 4), by Avishek Nag, School of Computer Science, University College Dublin.
 
 This repository holds the **labs only** — the runnable code referenced from
 each chapter. The book text itself is not here.
