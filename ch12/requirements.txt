@@ -1,0 +1,17 @@
+# Lab 12 — Chapter 12, "FN-DSA / FALCON"
+#
+# A real (toy-scale) NTRU key pair -- the NTRU equation solved, not assumed --
+# with B_pub/B_sec proven to generate the same lattice via exact arithmetic;
+# Babai nearest-plane rounding's parallelepiped leak, measured and compared
+# against Klein's randomised fix for two different secret bases of the same
+# lattice; and a precision-degradation experiment on that same fix. Pinned so
+# that a reader in 2029 gets the same output as the book shows.
+
+numpy==2.3.4
+sympy==1.14.0
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab12`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

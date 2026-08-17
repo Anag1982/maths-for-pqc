@@ -1,0 +1,18 @@
+# Lab 7 — Chapter 7, "SIS and LWE"
+#
+# SIS by brute force, a real (toy-scale) search-to-decision reduction run
+# against a black-box oracle, CBD_eta vs. a naive discrete-Gaussian sampler,
+# and a two-panel BDD-decoding reproduction -- all written from scratch in
+# plain Python. No lattice-reduction library, no SageMath, no sympy, and no
+# cryptographic sampling library (Part C is the point: a naive sampler's
+# control-flow shape, not a production implementation). Pinned so that a
+# reader in 2029 gets the same output as the book shows.
+
+numpy==2.3.4
+matplotlib==3.10.7
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab07`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

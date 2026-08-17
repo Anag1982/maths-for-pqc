@@ -1,0 +1,16 @@
+# Lab 13 — Chapter 13, "Codes: HQC and Classic McEliece"
+#
+# A real toy binary Goppa code (GF(16) field arithmetic built from scratch,
+# no external field library), masked and decoded exactly as Classic McEliece's
+# KeyGen/Encrypt/Decrypt describe; a toy quasi-cyclic code whose decoding
+# failure rate is measured, not asserted; and a reaction attack that recovers
+# a secret from decoding outcomes alone. Pinned so that a reader in 2029 gets
+# the same output as the book shows.
+
+numpy==2.3.4
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab13`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

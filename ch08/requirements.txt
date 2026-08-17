@@ -1,0 +1,17 @@
+# Lab 8 — Chapter 8, "How Hard Is It Really?"
+#
+# The Geometric Series Assumption, the primal-attack success condition, and
+# the core-SVP cost model, all implemented directly from the chapter's own
+# formulas -- no SageMath, no external lattice-estimator package. The whole
+# point of this lab is that the core-SVP methodology is simple enough to
+# reproduce from arithmetic alone. Pinned so that a reader in 2029 gets the
+# same output as the book shows.
+
+numpy==2.3.4
+matplotlib==3.10.7
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab08`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

@@ -1,0 +1,15 @@
+# Lab 14 — Chapter 14, "Isogenies: A Cautionary Tale"
+#
+# Vélu's isogeny formulas, a toy SIDH-style key exchange, and a toy
+# demonstration of the auxiliary-torsion-point leak Castryck and Decru
+# exploited in 2022 -- all built from scratch (plain integer/modular
+# arithmetic only, no elliptic-curve or number-theory library). Pinned so
+# that a reader in 2029 gets the same output as the book shows.
+
+# no third-party numerical packages required
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab14`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

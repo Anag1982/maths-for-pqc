@@ -1,0 +1,16 @@
+# Lab 5 — Chapter 5, "Lattices"
+#
+# Gram-Schmidt orthogonalisation, unimodular equivalence, brute-force
+# shortest-vector search and q-ary lattice construction are all written from
+# scratch in plain Python -- no lattice-reduction library (that is Chapter
+# 8's job), no SageMath, no sympy. Pinned so that a reader in 2029 gets the
+# same output as the book shows.
+
+numpy==2.3.4
+matplotlib==3.10.7
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab05`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

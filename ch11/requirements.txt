@@ -1,0 +1,15 @@
+# Lab 11 — Chapter 11, "FIPS 205: SLH-DSA"
+#
+# Lamport signatures broken on purpose, a WOTS+ hash chain and the checksum
+# that stops its one forgery, a Merkle tree and authentication path, and a
+# full toy SLH-DSA (WOTS+ + Merkle hypertree + FORS) built directly from the
+# chapter's own definitions and derivations. Pinned so that a reader in 2029
+# gets the same output as the book shows.
+
+numpy==2.3.4
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab11`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

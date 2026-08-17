@@ -1,0 +1,15 @@
+# Lab 3 — Chapter 3, "Polynomial Rings"
+#
+# Negacyclic multiplication, primitive-root search and module arithmetic are
+# all written from scratch in plain Python -- no SageMath, no NTT library
+# (that is Chapter 4's job), no sympy. Pinned so that a reader in 2029 gets
+# the same output as the book shows.
+
+numpy==2.3.4
+matplotlib==3.10.7
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab03`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

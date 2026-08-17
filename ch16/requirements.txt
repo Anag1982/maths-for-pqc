@@ -1,0 +1,14 @@
+# Lab 16 - Chapter 16, "The On-Ramp"
+#
+# A toy MPC-in-the-head signature (Part A) and a toy oil-and-vinegar
+# trapdoor (Part B) -- all built from the Python standard library alone
+# (hashlib, random, time). No cryptographic or numerical library needed.
+# Pinned so that a reader in 2029 gets the same output as the book shows.
+
+# no third-party numerical packages required
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab16`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

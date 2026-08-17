@@ -1,0 +1,16 @@
+# Lab 10 — Chapter 10, "FIPS 204: ML-DSA"
+#
+# A rejection-sampling secret-independence simulation, exactness checks for
+# Decompose/HighBits/LowBits/MakeHint/UseHint, and a full toy end-to-end
+# ML-DSA-like KeyGen/Sign/Verify scheme built directly from the chapter's
+# own formulas. Pinned so that a reader in 2029 gets the same output as the
+# book shows.
+
+numpy==2.3.4
+matplotlib==3.10.7
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab10`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

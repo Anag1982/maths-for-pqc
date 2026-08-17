@@ -1,0 +1,19 @@
+# Lab 2 — Chapter 2, "Modular Arithmetic and Finite Fields"
+#
+# Every algorithm in this lab (extended Euclid, order by factor-and-divide,
+# primitive-root search, F_{2^8} arithmetic) is written from scratch in plain
+# Python -- no SageMath, no sympy, no cryptographic library. That is
+# deliberate: the point of the chapter is to see exactly what each of these
+# computes and how. From Chapter 4 onwards the labs need the full environment
+# in Appendix B.
+#
+# Pinned so that a reader in 2029 gets the same output as the book shows.
+
+numpy==2.3.4
+matplotlib==3.10.7
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab02`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

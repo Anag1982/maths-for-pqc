@@ -1,0 +1,15 @@
+# Lab 15 — Chapter 15, "Migration Mathematics"
+#
+# TLS handshake and certificate-chain byte arithmetic, a TCP slow-start
+# round-trip simulation, and a probabilistic extension of Chapter 1's Mosca-
+# inequality exposure calculator -- all built from the Python standard library
+# alone (math, random). No cryptographic or numerical library needed. Pinned
+# so that a reader in 2029 gets the same output as the book shows.
+
+# no third-party numerical packages required
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab15`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1

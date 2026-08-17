@@ -1,0 +1,16 @@
+# Lab 9 — Chapter 9, "FIPS 203: ML-KEM"
+#
+# Textbook Regev encryption, the K-PKE noise-cancellation identity, and an
+# independent saddle-point reproduction of FIPS 203's decapsulation failure
+# rates -- all implemented directly from the chapter's own formulas. Pinned
+# so that a reader in 2029 gets the same output as the book shows.
+
+numpy==2.3.4
+matplotlib==3.10.7
+mpmath==1.3.0
+
+# Only needed to re-execute the notebook headlessly (CI, or `make lab09`).
+jupyter-core==5.9.1
+nbformat==5.10.4
+nbconvert==7.16.6
+ipykernel==6.31.1
